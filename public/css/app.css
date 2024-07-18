@@ -1,0 +1,28 @@
+
+html,body{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.parallax{
+    background-attachment: fixed;
+    height:300px;
+    width: 100%;
+    background-size:cover;
+}
+.opciones{
+    transition: ease-out 1s;
+}
+.opciones:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.row,.col{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#contenido{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
