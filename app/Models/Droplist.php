@@ -9,6 +9,6 @@ class Droplist extends Model
 {
     use HasFactory;
     protected $table = 'droplist';
-    
+    protected $primaryKey = 'itemid';
     
 }

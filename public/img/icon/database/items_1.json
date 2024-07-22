@@ -1,0 +1,65 @@
+{
+    "1": {
+        "id": "1",
+        "name": "Short Sword",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_small_sword_i00"
+    },
+    "2": {
+        "id": "2",
+        "name": "Long Sword",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_long_sword_i00"
+    },
+    "3": {
+        "id": "3",
+        "name": "Broadsword",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_broad_sword_i00"
+    },
+    "4": {
+        "id": "4",
+        "name": "Club",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_club_i00"
+    },
+    "5": {
+        "id": "5",
+        "name": "Mace",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_mace_i00"
+    },
+    "6": {
+        "id": "6",
+        "name": "Apprentice's Wand",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_apprentices_wand_i00"
+    },
+    "7": {
+        "id": "7",
+        "name": "Apprentice's Rod",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_apprentices_rod_i00"
+    },
+    "8": {
+        "id": "8",
+        "name": "Willow Staff",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_willow_staff_i00"
+    },
+    "9": {
+        "id": "9",
+        "name": "Cedar Staff",
+        "additionalname": "",
+        "description": "",
+        "icon": "weapon_cedar_staff_i00"
+    }       
+}

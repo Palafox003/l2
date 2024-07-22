@@ -16,14 +16,15 @@
       <!-- Navbar  -->
     <div class="row">
       <div class="col">
-        <nav class="navbar fixed-top bg-dark navbar-expand-lg"  data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark"  data-bs-theme="dark">
+          <div class="container-fluid">
               <a href="#" class="navbar-brand">
                 <img id="logo2" src="{{asset('/img/l2/logo2.png')}}" alt="" width="100">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -37,10 +38,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#informacion">Información</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/raidboss">RaidBoss</a>
+                  </li>
                 @if(Auth::check())
-                <li class="nav-item">
-                  <a class="nav-link" target="_blank" href="/raidboss">RaidBoss</a>
-                </li>
+                
                 @else
                   <li class="nav-item float-end">
                     <a style="cursor: pointer" class="nav-link" data-bs-toggle="modal" data-bs-target="#Modal2">Registro</a>
@@ -76,6 +78,9 @@
         </nav>
     </div>
   </div>  
+  
+
+  
   @if ($errors->any())
     <div class="alert alert-danger">
         <ul>

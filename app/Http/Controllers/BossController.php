@@ -13,9 +13,7 @@ class BossController extends Controller
     public function index()
     {
         //
-        $raidboss=RaidbossSpawnlist::all();
-        
-        return view('raidboss.raidboss',['raidboss'=>$raidboss]);
+        return view('raidboss.raidboss');
     }
 
     /**

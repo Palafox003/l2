@@ -9,7 +9,6 @@
             @livewire('welcome')
         </div>
     </div>
-
     <div class="row">
         <div class="col">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

@@ -9,6 +9,7 @@
     <title>@yield("titulo")</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    @livewireStyles
 </head>
 <body>
   <div id="contenido" class="container-fluid">
@@ -78,80 +79,12 @@
     </div>
   @endif
       @yield("contenido")
-  <!-- Modal 1 -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form method="POST" action="{{ route('login') }}">
-            @csrf
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">No compartas tu Información con nadie</div>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" name="password" class="form-control" id="password">
-            </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal 2 -->
-  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Registro</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form method="post" action="{{ route('register') }}">
-            @csrf
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre Completo</label>
-              <input type="text" name="name" class="form-control" id="nombre" >
-            </div>
-            <div class="mb-3">
-              <label for="correo" class="form-label">Correo</label>
-              <input type="email" name="email" class="form-control" id="correo">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" name="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Confirmar Password</label>
-              <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1">
-            </div>
-            
-         
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>   
+ 
 </div>
-
+@livewireScripts
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     @yield("js")
-
+    
 </body>
 </html>
